@@ -1,0 +1,600 @@
+ body{
+   font-family: 'Times New Roman', Times, serif;  
+   width: 100%;  
+   height: 100vh; 
+   display:grid; 
+   background-color: gentle sky blue ;  
+   background-position: center;  
+   background-size: cover;  
+}   
+
+
+header {  
+   background-color: aqua;  
+   color: bisque;  
+   padding: 10px; /* Added 'px' unit */  
+} 
+.menu{
+   width: 400px;
+   float: left;
+   height: 70px;
+} 
+ul{
+   float: left;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   list-style: none;
+   text-align: center;
+}
+ul li{
+   margin-right: 62px;
+   margin-top: 27px;
+   font-size: 14px;
+}
+
+nav a {  
+   color: burlywood;  
+   text-decoration: none;
+}  
+section {
+   padding: 3 rem 3 rem;
+   max-width:1000px ;
+   margin:auto;
+}
+
+nav li {   
+   display: block;  
+   margin: 0; /* Corrected to remove all margins */  
+}  
+
+.hero {  
+   
+   background-size: cover;  
+   background-position: center;  
+   height :200 vh;  
+   display: flex; /* Changed to 'flex' */  
+   justify-content:  space-between;  
+}  
+
+.product {   
+   display: flex; /* Corrected from 'f' to 'flex' */  
+   flex-wrap: wrap;  
+   justify-content: center;  
+   margin: 20px;  
+   padding: 20px;  
+   border: 1px solid #ddd;  
+   border-radius: 10px 10px 0 0;  
+   width: 300px; /* Changed from '30px' for a more reasonable width */  
+   height: auto; /* Changed from '10px' */  
+}  
+
+.product h3 {  
+   margin-top: 0; 
+   background-image: 
+}  
+
+button {  
+   background-color: white;  
+   color: white;  
+   border: none;  
+   padding: 20px 30px;  
+   font-size: 24px; /* Corrected to 'font-size' */  
+   cursor: pointer;  
+}.brand {  
+    padding: 40px 20px;  
+    background-color: #f0f0f0;  
+}  
+
+.brand-content {  
+    display: flex;  
+    justify-content: space-around;  
+}  
+.contact {  
+    padding: 60px 20px;  
+    background-color: black;  
+}  
+
+.main-contact {  
+    margin: 20px;  
+    width: 22%;  
+    display: inline-block;  
+    vertical-align: top;  
+}  
+
+.icons a {  
+    margin-right: 10px;  
+    font-size: 20px;  
+}  
+@media (max-width: 768px) {  
+    .navbar {  
+        flex-direction: column;  
+        display: none; /* Hide navbar initially for mobile */  
+    }  
+
+    .navbar.active {  
+        display: flex; /* Show when active */  
+    }  
+
+    .row, .box {  
+        width: 100%; /* Full width for mobile */  
+    }  
+
+    header {  
+        flex-direction: column;  
+        align-items: flex-start;  
+  <!-- Logo Section -->
+<div class="logo-container">
+  <h1 class="logo text-3xl font-bold text-pink-600">
+    Haven Fashions
+  </h1>
+</div>
+
+<style>
+  .logo-container {
+    text-align: center;
+    padding: 10px;
+  }
+  .logo {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #E11D48; /* Pink color */
+  }
+</style>
+
+  .logo-container {
+    text-align: center;
+    padding: 10px;
+  }
+  .logo {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #E11D48; /* Pink color */
+  }
+</style>
+
+
+    .header-icons {  
+        margin-top: 15px;  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .header-icons a {  
+        font-size: 20px;  
+    }  
+
+    .home-text {  
+        padding: 15px;  
+    } 
+  
+    /* Smooth scrolling*/
+      scroll-behavior: smooth;
+    }
+
+    /* Custom animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    /* Card hover effect */
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Gradient button */
+    .add-cart-btn {
+      background: linear-gradient(to right, #ec4899, #f472b6);
+      transition: background 0.3s ease;
+    }
+
+    .add-cart-btn:hover {
+      background: linear-gradient(to right, #db2777, #e879f9);
+    }
+
+    /* Cart popup */
+    #cart-popup {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    #cart-popup.hidden {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    /* Image placeholder */
+    img {
+      background: #f3f4f6;
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+    }/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.03);
+}
+
+/* Buttons */
+.add-cart-btn {
+  margin-top: 0.5rem;
+  background-color: #ec4899;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: #db2777;
+}
+
+/* Footer and Contact Enhancements */
+footer, .contact {
+  background-color: #ffe4e6;
+  color: #4b5563;
+}
+
+.main-contact h3 {
+  font-weight: bold;
+  color: #ec4899;
+  margin-bottom: 0.5rem;
+}
+
+.main-contact li a {
+  color: #4b5563;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.main-contact li a:hover {
+  color: #ec4899;
+}
+
+/* Icons section */
+.icons a i {
+  font-size: 24px;
+  margin: 0 8px;
+  color: #ec4899;
+  transition: transform 0.3s ease;
+}
+
+.icons a:hover i {
+  transform: scale(1.2);
+}
+/* === Contact Section === */
+.contact {
+  background-color: #ffe4e6; /* Light pink */
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.contact .main-contact {
+  flex: 1 1 200px;
+  min-width: 220px;
+}
+
+.contact h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #be185d; /* Darker pink */
+  margin-bottom: 1rem;
+}
+
+.contact h5 {
+  color: #6b7280; /* Gray */
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.contact li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.contact li a {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact li a:hover {
+  color: #be185d;
+}
+
+.contact .icons a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #6b7280;
+  transition: color 0.3s;
+}
+
+.contact .icons a:hover {
+  color: #be185d;
+}
+
+/* === Footer === */
+footer {
+  background-color: #ffe4e6;
+  padding: 1rem;
+  text-align: center;
+  color:
+<div class="product-card">
+  <img src="handbag.jpg" alt="Handbag" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Handbag</h3>
+    <p class="product-price">$49.99</p>
+  </div>
+</div>
+/* General Contact Box Styling */
+.main-contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.main-contact:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Styling */
+.main-contact h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e91e63; /* Pink color */
+    margin-bottom: 10px;
+}
+
+.main-contact h5 {
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Links Styling for 'Explore' & 'Our Services' */
+.main-contact li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+    list-style-type: none;
+}
+
+.main-contact li a {
+    color: #e91e63;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.main-contact li a:hover {
+    color: #d81b60;
+}
+
+/* Social Media Icons Styling */
+.icons a {
+    color: #e91e63;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.icons a:hover {
+    color: #d81b60;
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #fce4ec; /* Light pink background */
+    padding: 40px 0;
+}
+
+#contact h2 {
+    color: #e91e63;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #e91e63;
+}
+
+#contact button {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #d81b60;
+}
+
+/* 'Explore' and 'Our Services' Specific Styling */
+#explore, #services {
+    background-color: #f8bbd0; /* Soft pink background */
+    padding: 40px 0;
+}
+
+#explore h3, #services h3 {
+    color: #e91e63;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#explore ul, #services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#explore li, #services li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+#explore li a, #services li a {
+    color: #e91e63;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#explore li a:hover, #services li a:hover {
+    color: #d81b60;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .main-contact {
+        padding: 15px;
+    }
+
+    .main-contact h3 {
+        font-size: 1.25rem;
+    }
+
+    .main-contact li {
+        font-size: 0.9rem;
+    }
+
+    .icons a {
+        font-size: 1.3rem;
+        margin-right: 10px;
+    }
+
+    #contact h2 {
+        font-size: 1.75rem;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        padding: 12px;
+    }
+
+    #contact button {
+        padding: 12px 25px;
+    }
+
+    #explore h3, #services h3 {
+        font-size: 1.5rem;
+    }
+
+    #explore li, #services li {
+        font-size: 1rem;
+    }
+}/* Horizontal Layout for 'Explore' and 'Our Services' */
+#explore, #services {
+    background-color: #f8bbd0; /* Soft pink background */
+    padding: 40px 0;
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space between the two sections */
+    align-items: center; /* Vertically align content */
+}
+
+#explore h3, #services h3 {
+    color: #e91e63;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%; /* Ensures the title takes full width of its container */
+}
+
+#explore ul, #services ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 45%; /* Each list takes up 45% of the section's width */
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+}
+
+#explore li, #services li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+#explore li a, #services li a {
+    color: #e91e63;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#explore li a:hover, #services li a:hover {
+    color: #d81b60;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    #explore, #services {
+        flex-direction: column; /* Stack the sections vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    #explore ul, #services ul {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+
+
